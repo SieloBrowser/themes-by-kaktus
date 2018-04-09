@@ -3,17 +3,17 @@
 English
 ==
 <h3>Presentation</h3>
-<p>Dark theme created by kaktus for sielo browser</p>
+<p>Dark theme created by kaktus for Sielo browser</p>
 <h3>How to install</h3>
-<p>For install this theme please selecter the theme-dark.snthm and go in sielo click on "Add a theme" in "Appearance" and select the file, it will be decompressed and added in the list</p>
-<h3>What is Sielo ?</h3>
-<p>Sielo is a web browser created by Felrise. He have the particularity to be fast at start and to have innovative features such tab spaces that divide the same window into multiple tabs, or the floating button that replace the toolbar with all its options</p>
+<p>In order to install this theme, please selecte the theme-dark.snthm and file when you click on "Add a theme" button in "Appearance" section of preferences. and select the file. It will be added in the list</p>
+<h3>What is Sielo?</h3>
+<p>Sielo is a web browser created by Felrise. It have the particularity to be fast at startup and to bring innovative features such tab spaces that divide the same window into multiple sections of tabs, or the floating button that can replace the toolbar.</p>
 <p>More informations on the github repo at https://github.com/Felrise/SieloNavigateur</p>
 
 Français
 ==
 <h3>Présentation</h3>
-<p>Thème dark crée pour le navigateur Sielo</p>
+<p>Thème dark crée par Kaktus pour le navigateur Sielo</p>
 <h3>Comment l'installer</h3>
 <p>Pour installer ce thème veuillez prendre le theme-dark.snthm et allez dans sielo puis choisiez "Add a theme" dans "Appearance" et sélectionnez le fichier, il va être décompréssé et ajouté dans la liste</p>
 <h3>Ques'que que sielo ?</h3>
