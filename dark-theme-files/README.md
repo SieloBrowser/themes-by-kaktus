@@ -16,3 +16,6 @@ Français
 <p>Thème dark crée pour le navigateur Sielo</p>
 <h3>Comment l'installer</h3>
 <p>Pour installer ce thème veuillez prendre le theme-dark.snthm et allez dans sielo puis choisiez "Add a theme" dans "Appearance" et sélectionnez le fichier, il va être décompréssé et ajouté dans la liste</p>
+<h3>Ques'que que sielo ?</h3>
+<p>Sielo est un navigateur web créer par Felrise. Il a la particularité d'être rapide au démarrage et d'avoir des fonctionnalités innovantes telles que les espaces de d'onglets qui divisent la même fenêtre en plusieurs onglets, ou le bouton flottant qui remplace la barre d'outils avec toutes ses options</p>
+<p>Plus d'informations sur le repo github à https://github.com/Feldrise/SieloNavigateur </p>
