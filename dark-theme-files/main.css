@@ -1,3 +1,7 @@
+/**
+ * Tab bar & tab rules
+ */
+
 #tabbarwidget * {
     background: scolor(main, normal, 255);
 }
@@ -27,6 +31,10 @@ QTabBar::tab:!selected:hover
     background: scolor(accent, dark);
 }
 
+/**
+ * Add & close tab button rules
+ */
+
 #tabs-closebutton:hover
 {
     border-radius: 0px;
@@ -34,18 +42,21 @@ QTabBar::tab:!selected:hover
 }
 
 #highlighted-new-tabsspace {
-    background: rgba(66,66,66,0.5);
+    background: scolor(accent);
 }
+
+/**
+ * Floating button sss rules
+ */
 
 #fbutton-root
 {
     sproperty-icon: url($ulightness/icon.png);
     sproperty-iconSize: 32px;
-    border-radius: 2px;
+    border-radius: 5px;
     margin: 3px;
     background-color: scolor(main);
     border: 1px solid scolor(main);
-    border-radius: 5px;
 }
 
 #fbutton-add-bookmark
@@ -136,6 +147,10 @@ QTabBar::tab:!selected:hover
     background-color: #546E7A;
 }
 
+/**
+ * Navigation bar rules
+ */
+
 #navigationbar
 {
     border: none;
@@ -160,14 +175,18 @@ QTabBar::tab:!selected:hover
     border: none;
 }
 
+/**
+ * Navigation bar tool buttons rules
+ */
+
 #navigation-button-back {
-    background: scolor(second, light, 175);
-    border: scolor(second, light, 175);
+    background: scolor(second, normal, 175);
+    border: scolor(second, normal, 175);
 }
 
 #navigation-button-forward {
-    background: scolor(second, light, 175);
-    border: scolor(second, light, 175);
+    background: scolor(second, normal, 175);
+    border: scolor(second, normal, 175);
 }
 
 #navigation-button-back:disabled {
@@ -196,6 +215,10 @@ QTabBar::tab:!selected:hover
     background-color: rgba(0,105,92,0.75);
 }
 
+/**
+ * Navigation bar address bar rules
+ */
+
 #addressbar {
     height: 30px;
     border-top-left-radius: 10px;
@@ -216,9 +239,35 @@ QTabBar::tab:!selected:hover
     spacing: 0px;
 }
 
+/**
+ * Search tool bar rules
+ */
+
 #search-toolbar {
-    background: scolor(main, normal, 175);
+    background: scolor(main, normal, 255);
+    color: scolor(text);
 }
+
+#search-toolbar QToolButton {
+    background: scolor(accent, normal, 175);
+    border: none;
+}
+
+/**
+ * Bookmarks bar rules
+ */
+#bookmarks-bar {
+    background: scolor(main, normal, 255);
+}
+
+#bookmarks-bar QToolButton {
+    background: scolor(accent, normal, 175);
+    border: none;
+}
+
+/**
+ * Others
+ */
 
 QSplitterHandle {
     background: scolor(accent, normal, 175);
