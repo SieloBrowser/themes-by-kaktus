@@ -243,26 +243,48 @@ QTabBar::tab:!selected:hover
  * Search tool bar rules
  */
 
-#search-toolbar {
-    background: scolor(main, normal, 255);
+#search-toolbar *
+{
+    background: scolor(main, normal, 175);
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding: 7px 7px;
     color: scolor(text);
+    font-size: 12px;
 }
 
-#search-toolbar QToolButton {
-    background: scolor(accent, normal, 175);
-    border: none;
+#search-toolbar QPushButton:checked
+{
+    background: scolor(accent);
+}
+
+#search-toolbar QPushButton:hover
+{
+    background: scolor(accent);
+}
+
+#search-toolbar QPushButton:disabled
+{
+    background: none;
 }
 
 /**
  * Bookmarks bar rules
  */
 #bookmarks-toolbar {
+    height: 30px;
+    border: 2px solid transparent;
+    border-radius: 5px;
     background: scolor(main, normal, 255);
 }
 
 #bookmarks-toolbar QToolButton {
+    height: 25px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    margin: 2px;
     background: scolor(accent, normal, 175);
-    border: none;
+    color: scolor(text, normal);
 }
 
 /**
