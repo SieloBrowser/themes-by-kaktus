@@ -331,11 +331,13 @@ QTabBar::tab:!selected:hover
   background: scolor(main);
   color: scolor(text);
   border: 1px solid scolor(accent);
-  border-radius: 2px;
+  border-radius: 5px;
 }
 
 #preferences-list::item::selected {
   background: scolor(accent);
+  border: 1px solid scolor(accent);
+  border-radius: 5px;
 }
 
 #preferences-list::item::!selected::hover {
@@ -344,12 +346,12 @@ QTabBar::tab:!selected:hover
 
 #preferences-line
 {
-	background: scolor(accent);
+	background: transparent;
 }
 
 #preferences-title
 {
-	color: scolor(accent);
+	color: scolor(text);
 }
 
 
