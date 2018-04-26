@@ -35,6 +35,61 @@ QTabBar::tab:!selected:hover
     background: scolor(accent, dark);
 }
 
+/* Tab bar */
+
+#maintabbar {
+    height: 42.5px;
+}
+
+#tabbarwidget * {
+    height: 42.5px;
+    background: scolor(main);
+}
+
+#tabbar::tab {
+    height: 42.5px;
+    color: scolor(text);
+}
+
+#tabbar::tab:!selected
+{
+    border-right: 1px solid #535355;
+    height: 25px;
+    margin: 5px 0px 8px 0px;
+    background: transparent
+}
+
+#tabbar::tab:!selected:hover
+{
+    height: 35px;
+    margin: 0px;
+    border-right: 1px solid #535355;
+    border-left: 1px solid #535355;
+    background: scolor(main, dark) repeat-x;
+}
+
+#pinnedtabbar::tab {
+    height: 42.5px;
+    color: scolor(text);
+}
+
+#pinnedtabbar::tab:!selected
+{
+    border-right: 1px solid scolor(main);
+    height: 30px;
+    margin: 5px 0px 8px 0px;
+    background: transparent
+}
+
+#pinnedtabbar::tab:!selected:hover
+{
+    height: 35px;
+    margin: 0px;
+    border-right: 1px solid #535355;
+    border-left: 1px solid #535355;
+    background: scolor(accent, dark) repeat-x;
+}
+
 /**
  * Add & close tab & preferences button rules
  */
@@ -179,6 +234,78 @@ QTabBar::tab:!selected:hover
 }
 
 /**
+* Title bar rules
+  */
+
+#title-bar {
+    height: 30px;
+    border: none;
+    background: scolor(main, light, 175);
+}
+
+#title-bar QToolButton {
+    height: 25px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    margin: 2px;
+    background: scolor(accent, normal, 175);
+    color: scolor(text, normal);
+}
+
+#title-bar QToolButton:hover {
+    background: scolor(accent, light);
+}
+
+
+#title-bar #titlebar-button-close {
+    max-width: 11px;
+    max-height: 16px;
+    padding: 7px 14px;
+    background: scolor(accent, normal, 175);
+}
+
+#title-bar #titlebar-button-close:hover {
+    background: #C62828;
+}
+
+#title-bar #titlebar-button-reverse-maximize {
+    max-width: 11px;
+    max-height: 16px;
+    padding: 7px 14px;
+    background: scolor(accent, normal, 175);
+}
+
+#title-bar #titlebar-button-reverse-maximize:hover {
+    background: scolor(main, light, 175);
+}
+
+#title-bar #titlebar-button-maximize {
+    max-width: 11px;
+    max-height: 16px;
+    padding: 7px 14px;
+    background: scolor(accent, normal, 175);
+}
+
+#title-bar #titlebar-button-maximize:hover {
+    background: scolor(main, light, 175);
+}
+
+#title-bar #titlebar-button-minimize {
+    max-width: 11px;
+    max-height: 16px;
+    padding: 7px 14px;
+    background: scolor(accent, normal, 175);
+}
+
+#title-bar #titlebar-button-minimize:hover {
+    background: scolor(main, light, 175);
+}
+
+#title-bar #titlebar-title {
+    color: scolor(text);
+}
+
+/**
  * Navigation bar rules
  */
 
@@ -300,26 +427,6 @@ QTabBar::tab:!selected:hover
 }
 
 /**
- * Bookmarks bar rules
- */
- 
-#bookmarks-toolbar {
-    height: 30px;
-    border: 2px solid transparent;
-    border-radius: 5px;
-    background: scolor(main, normal, 255);
-}
-
-#bookmarks-toolbar QToolButton {
-    height: 25px;
-    border: 2px solid transparent;
-    border-radius: 5px;
-    margin: 2px;
-    background: scolor(accent, normal, 175);
-    color: scolor(text, normal);
-}
-
-/**
  * Preferences rules
  */
  
@@ -414,9 +521,15 @@ QDialog QPushButton
 	background: scolor(accent, light);
 	border: 2px solid transparent;
 	border-radius: 4px;
-	padding: 7px 14px;
+    padding: 8px 16px;
 	color: white;
 	font-size: 12px;
+}
+
+QDialog QPushButton:hover
+{
+    background: scolor(accent, dark);
+    padding: 8px 16px;
 }
 
 QDialog QPushButton:focus
