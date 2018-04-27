@@ -53,19 +53,14 @@ QTabBar::tab:!selected:hover
 
 #tabbar::tab:!selected
 {
-    border-right: 1px solid #535355;
-    height: 25px;
-    margin: 5px 0px 8px 0px;
+    height: 42.5px;
     background: transparent
 }
 
 #tabbar::tab:!selected:hover
 {
-    height: 35px;
-    margin: 0px;
-    border-right: 1px solid #535355;
-    border-left: 1px solid #535355;
-    background: scolor(main, dark) repeat-x;
+    height: 42.5px;
+    background: scolor(main, light);
 }
 
 #pinnedtabbar::tab {
@@ -75,19 +70,14 @@ QTabBar::tab:!selected:hover
 
 #pinnedtabbar::tab:!selected
 {
-    border-right: 1px solid scolor(main);
-    height: 30px;
-    margin: 5px 0px 8px 0px;
+    height: 42.5px;
     background: transparent
 }
 
 #pinnedtabbar::tab:!selected:hover
 {
-    height: 35px;
-    margin: 0px;
-    border-right: 1px solid #535355;
-    border-left: 1px solid #535355;
-    background: scolor(accent, dark) repeat-x;
+    height: 42.5px;
+    background: scolor(accent, light);
 }
 
 /**
@@ -238,14 +228,14 @@ QTabBar::tab:!selected:hover
   */
 
 #title-bar {
-    height: 30px;
+    height: 35px;
     border: none;
     background: scolor(main, light, 175);
 }
 
 #title-bar QToolButton {
-    height: 25px;
-    border: 2px solid transparent;
+    height: 30px;
+    border: 1px solid transparent;
     border-radius: 5px;
     margin: 2px;
     background: scolor(accent, normal, 175);
@@ -276,7 +266,7 @@ QTabBar::tab:!selected:hover
 }
 
 #title-bar #titlebar-button-reverse-maximize:hover {
-    background: scolor(main, light, 175);
+    background: scolor(accent, light, 175);
 }
 
 #title-bar #titlebar-button-maximize {
@@ -287,7 +277,7 @@ QTabBar::tab:!selected:hover
 }
 
 #title-bar #titlebar-button-maximize:hover {
-    background: scolor(main, light, 175);
+    background: scolor(accent, light, 175);
 }
 
 #title-bar #titlebar-button-minimize {
@@ -298,7 +288,7 @@ QTabBar::tab:!selected:hover
 }
 
 #title-bar #titlebar-button-minimize:hover {
-    background: scolor(main, light, 175);
+    background: scolor(accent, light, 175);
 }
 
 #title-bar #titlebar-title {
