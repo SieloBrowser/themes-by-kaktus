@@ -233,19 +233,11 @@ QTabBar::tab:!selected:hover
     background: scolor(main, light, 175);
 }
 
-#title-bar QToolButton {
+#title-bar QToolButton{
     height: 30px;
     border: 1px solid transparent;
     border-radius: 5px;
-    margin: 2px;
-    background: scolor(accent, normal, 175);
-    color: scolor(text, normal);
 }
-
-#title-bar QToolButton:hover {
-    background: scolor(accent, light);
-}
-
 
 #title-bar #titlebar-button-close {
     max-width: 11px;
@@ -293,6 +285,46 @@ QTabBar::tab:!selected:hover
 
 #title-bar #titlebar-title {
     color: scolor(text);
+}
+
+/**
+ * Bookmarks toolbar rules
+ */
+#bookmarks-toolbar {
+    height: 35px;
+    border: none;
+    background: scolor(main, light, 175);
+}
+
+#bookmarks-toolbar QToolButton{
+    height: 30px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin: 2px;
+    background: scolor(accent, normal, 175);
+    color: scolor(text, normal);
+}
+
+#bookmarks-toolbar QToolButton:hover {
+    background: scolor(accent, light);
+}
+
+#bookmarks-toolbar QToolButton[popupMode="2"] {
+    padding-right: 10px;
+}
+
+#bookmarks-toolbar QToolButton:open {
+    background: scolor(accent, normal);
+}
+
+#bookmarks-toolbar QToolButton::menu-indicator {
+    subcontrol-origin: padding;
+    subcontrol-position: center right;
+}
+
+#bookmarks-toolbar QToolButton::menu-indicator:pressed, #bookmarks-toolbar QToolButton::menu-indicator:open {
+    position: relative;
+    top: 2px; left: 2px;
 }
 
 /**
