@@ -13,6 +13,8 @@ QTabBar::tab
     height: 35px;
     border: 1px transparent;
     border-radius: 17.5px;
+    margin: 0px;
+    margin-bottom: 3px;
     color: scolor(text);
 }
 
@@ -94,13 +96,14 @@ QTabBar::tab:!selected:hover
 
 #tabs-closebutton:hover
 {
-    border-radius: 0px;
+    border-radius: 15px;
     background-color: #C62828;
 }
 
 #tabwidget-button-addtab:hover {
     border: scolor(accent);
     background: scolor(accent);
+    border-radius: 15px;
 }
 
 #tabwidget-button-addtab {
@@ -397,8 +400,10 @@ QTabBar::tab:!selected:hover
 	width: 25px;
     height: 25px;
 	padding: 0px;
-	margin: 0px;
+	margin: 5px;
     spacing: 0px;
+    border: 1px solid transparent;
+    border-radius: 15px
 }
 
 /**
