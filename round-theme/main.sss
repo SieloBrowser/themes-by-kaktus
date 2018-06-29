@@ -505,19 +505,28 @@ QTabBar::tab:!selected:hover
 #preferences-list {
   background: transparent;
   color: scolor(text);
-  border: 1px solid scolor(accent);
+  border: 1px transparent;
   border-radius: 5px;
+}
+
+#preferences-list::item {
+    margin-bottom: 5px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    padding-left: 5px;
 }
 
 #preferences-list::item::selected {
-  background: scolor(accent);
+  border-color: scolor(accent, dark);
+  background: scolor(accent, normal, 50);
+  border-radius: 10px;
   color: scolor(text);
-  border: 1px solid scolor(accent);
-  border-radius: 5px;
 }
 
 #preferences-list::item::!selected::hover {
-  background: scolor(accent);
+    background: scolor(accent, normal, 50);
+    border-radius: 10px;
+    color: scolor(text);
 }
 
 #preferences-line
